@@ -357,17 +357,27 @@ nav img {
     margin-bottom: 0.5rem;
 }
 
+.footer-column img {
+    width: 7rem;
+    margin: 0 auto 0.75rem;
+}
+
 /* Contact Email */
 .contact-email {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.25rem; /* Reduced gap */
+    gap: 0.25rem;
     color: #27B7B4;
     font-size: 0.875rem;
     margin-bottom: 1rem;
     text-decoration: none;
 }
+
+.contact-email img, a {
+    margin-top: 0.5rem;
+}
+
 
 .contact-email:hover {
     color: #125655;
@@ -377,18 +387,40 @@ nav img {
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
 }
 
 .social-icon img {
     transition: transform 0.3s ease-in-out;
 }
 
+/* Adjust icon sizes */
+.social-icon img[alt="Facebook"] {
+    width: 20px;
+    height: 20px;
+}
+
+.social-icon img[alt="YouTube"] {
+    width: 20px;
+    height: 20px;
+}
+
+.social-icon img[alt="LinkedIn"] {
+    width: 20px;
+    height: 20px;
+}
+
+.social-icon img[alt="GitHub"] {
+    width: 20px;
+    height: 20px;
+}
+
 .social-icon img:hover {
     transform: scale(1.1);
 }
 
-
+/* Divider */
 .footer-divider {
     border-top: 1px solid #27B7B4;
     margin: 1.5rem auto;
