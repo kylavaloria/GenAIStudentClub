@@ -11,6 +11,43 @@
     <link rel="stylesheet" href="styles/styles.css">
 
     <style>
+        .header-nav {
+            position: fixed;
+            z-index: 100;
+            background-color: #27B7B4;
+            padding: 2rem 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            justify-content: center;
+            position: relative;
+        }
+
+        .back-button {
+            position: absolute;
+            left: 1rem;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .page-title {
+            color: white;
+            text-align: center;
+        }
+
+        .page-title h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+        }
+
+        .page-title p {
+            font-size: 1rem;
+            margin: 0;
+            opacity: 0.9;
+        }
+
         .members-container {
             padding: 120px 2rem 4rem;
             max-width: 1200px;
@@ -49,12 +86,14 @@
 
         .member-info {
             padding: 1.5rem;
+            text-align: center;
         }
 
         .member-info h3 {
             color: #27B7B4;
             font-size: 1.25rem;
             margin-bottom: 0.5rem;
+            text-align: center;
         }
 
         .member-info h4 {
@@ -62,12 +101,14 @@
             font-size: 1rem;
             margin-bottom: 1rem;
             font-weight: 600;
+            text-align: center;
         }
 
         .member-info p {
             color: #666;
             font-size: 0.9rem;
             line-height: 1.5;
+            text-align: center;
         }
 
         .social-links {
@@ -99,16 +140,19 @@
 
 <body class="members-page">
     <!-- Navigation -->
-    <nav id="navbar">
-        <img src="img\logo\logo-light.png" alt="Gen AI Philippines Logo" id="navLogo">
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#principles">Principles</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="members.html">Members</a></li>
-        </ul>
-    </nav>
+    <div class="header-nav">
+        <a href="index.html" class="back-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m12 19-7-7 7-7"></path>
+                <path d="M19 12H5"></path>
+            </svg>
+        </a>
+        <div class="page-title">
+            <h1>Members</h1>
+            <p>Meet the team behind Gen AI Student Club.</p>
+        </div>
+    </div>
 
     <!-- Members Section -->
     <section class="members-container">
@@ -276,7 +320,7 @@
 
             <div class="member-card">
                 <div class="member-image">
-                    <img src="img/members/member.jpg" alt="Elon Musk"
+                    <img src="img/members/member-8.jpg" alt="Elon Musk"
                         onerror="this.src='img/members/default-avatar.jpg'">
                 </div>
                 <div class="member-info">

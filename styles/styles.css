@@ -6,6 +6,7 @@
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
 }
+
 /* Global background */
 body {
     background-image: url('/img/background.jpeg');
@@ -19,7 +20,7 @@ body {
 /* Body style for members page plain background */
 body.members-page {
     background-image: none !important;
-    background-color: aliceblue !important;
+    background-color: #E5FFF9;
 }
 
 /* Container */
@@ -199,7 +200,7 @@ nav img {
     font-size: 0.875rem;
 }
 
-.about-text p + p {
+.about-text p+p {
     margin-top: 1rem;
 }
 
@@ -306,7 +307,8 @@ nav img {
 
 
 @media (min-width: 640px) {
-    .mission h2, 
+
+    .mission h2,
     .vision h2,
     .core-principles h2 {
         font-size: 1.875rem;
@@ -327,6 +329,7 @@ nav img {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
 /* Footer */
 .footer {
     background-color: #E5FFF9;
@@ -380,7 +383,8 @@ nav img {
     text-decoration: none;
 }
 
-.contact-email img, a {
+.contact-email img,
+a {
     margin-top: 0.5rem;
 }
 
@@ -445,11 +449,11 @@ nav img {
     .footer-column {
         text-align: left;
     }
-    
+
     .footer-column p {
         margin-left: 0;
     }
-    
+
     .contact-email,
     .social-icons {
         justify-content: flex-start;
