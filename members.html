@@ -69,6 +69,31 @@
             font-size: 0.9rem;
             line-height: 1.5;
         }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-button {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: none;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-button img {
+            width: 20px;
+            height: 20px;
+        }
     </style>
 </head>
 
@@ -85,6 +110,7 @@
         </ul>
     </nav>
 
+    <!-- Members Section -->
     <section class="members-container">
         <div class="members-grid">
             <div class="member-card">
@@ -96,6 +122,17 @@
                     <h3>Kyla Mae Valoria</h3>
                     <h4>President</h4>
                     <p>Leads the club, oversees projects, and ensures everything runs smoothly.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/username" target="_blank" class="social-button">
+                            <img src="img/icons/facebook-icon.png" alt="Facebook">
+                        </a>
+                        <a href="https://twitter.com/username" target="_blank" class="social-button">
+                            <img src="img/icons/linkedin-icon.png" alt="LinkedIn">
+                        </a>
+                        <a href="https://github.com/username" target="_blank" class="social-button">
+                            <img src="img/icons/github-icon.png" alt="GitHub">
+                        </a>
+                    </div>
                 </div>
             </div>
 
