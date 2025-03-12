@@ -16,6 +16,12 @@ body {
     padding: 0;
 }
 
+/* Body style for members page plain background */
+body.members-page {
+    background-image: none !important;
+    background-color: aliceblue !important;
+}
+
 /* Container */
 .container {
     max-width: 1200px;
